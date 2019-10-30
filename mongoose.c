@@ -2769,7 +2769,7 @@ send_file(struct mg_connection *conn, const char *path, struct mgstat *stp)
 	    "Date: %s\r\n"
 	    "Last-Modified: %s\r\n"
 	    "Etag: \"%s\"\r\n"
-	    "Content-Type: %.*s\r\n"
+	    "Content-Type: %.*s; charset=utf-8\r\n\r\n"
 	    "Content-Length: %" UINT64_FMT "u\r\n"
 	    "Connection: close\r\n"
 	    "Accept-Ranges: bytes\r\n"
